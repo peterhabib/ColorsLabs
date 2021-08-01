@@ -25,7 +25,7 @@ SECRET_KEY = 'm3c59eceey$ik0*y2)2z0^*qh&*o)z3)b28bu1+7q#5l0q6_jg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['colorslabs.herokuapp.com']
 
 
 # Application definition
