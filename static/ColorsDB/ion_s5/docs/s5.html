@@ -1,0 +1,173 @@
+{%load static%}
+
+<!DOCTYPE html>
+
+
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js lt-ie10"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><! <html lang="en" class="no-js"> <![endif]-->
+    <head>
+        <meta charset="utf-8" />
+
+        <title>S5 DATA</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, minimal-ui">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="description" content="An awesome solution for responsive tables with complex data.">
+
+        <!-- Font Awesome -->
+        <link async href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+        <!-- Responsive Tables -->
+        <link rel="stylesheet" href="css/rwd-table.min.css?v=5.3.1">
+        <link rel="stylesheet" href="{% static '/ColorsDB/ion_s5/css/docs.min.css' %}">
+
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-19870163-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+        </script>
+    </head>
+
+    <body data-spy="scroll" data-target="#navbar" data-offset="50">
+        <div id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href=""><span class="navbar-brand"><span class="fa fa-table"></span> Ion S5</span></a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#demo">Explore</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <div class="container">
+                <h1>IonTorrent S5</h1>
+<!--                <h3>by <a href="https://twitter.com/nadangergeo">@nadangergeo</a> & <a href="https://github.com/wnr">@wnr</a></h3>-->
+
+<!--                <p class="desc">This is an <strike>experimental</strike> awesome solution for responsive tables with complex data.</p>-->
+                <p>
+                    <a href="https://github.com/nadangergeo/RWD-Table-Patterns/archive/v5.3.1.zip" id="download-btn" class="btn btn-outline btn-lg" role="button"><span class="fa fa-download"></span> Download All Data in CSV Format</a>
+                </p>
+            </div>
+        </div>
+
+<!--        <section id="features">-->
+<!--            <div class="container">-->
+<!--                <div class="page-header">-->
+<!--                    <h2>Features</h2>-->
+<!--                </div>-->
+
+<!--                <div class="row">-->
+<!--                    <div class="feature col-lg-3 col-md-6 col-sm-12">-->
+<!--                        <h4><i class="fa fa-file-text"></i>Description</h4>-->
+<!--                        <p>The Ion S5™ next-generation sequencing system enables a simple targeted sequencing workflow for your lab at an affordable price, without compromising on performance or reliability. The Ion S5 System leverages the speed of semiconductor sequencing with impressive on-board computing power, to enable the production of high quality sequencing data in as little as 2.5 hours and enable you to go from DNA library to data in as little as 24 hours with only 45 minutes of total hands-on time on the Ion Chef™ System and the Ion S5 System. The Ion S5 System is simple to use with cartridge-based reagents and offers superior scalability and flexibility to support a broad range of high throughput sequencing applications, from microbial genomes and gene panels to exomes and transcriptomes, using our 5 Series chips.</p>-->
+<!--                    </div>-->
+<!--                    <div class="feature col-lg-3 col-md-6 col-sm-12">-->
+<!--                        <h4><i class="fa fa-thumbs-o-up"></i>Simplicity</h4>-->
+<!--                        With single-day installation, a straightforward user interface, and cartridge-loaded reagents, the Ion S5 System is easy to use. Beyond this, the system is part of a workflow that allows you to go from DNA to data with only 45 minutes of total hands-on time on the Ion Chef System and the Ion S5 System, significantly less than other targeted sequencing solutions that require as much as 2.5 hours of hands-on time. Combined with Ion AmpliSeq™ technology for target selection, the Ion Chef™ System for automated library and template preparation, and Ion Reporter™ Software for automated variant annotation, targeted sequencing becomes simpler than ever.-->
+<!--                    </div>-->
+<!--                    <div class="feature col-lg-3 col-md-6 col-sm-12">-->
+<!--                        <h4><i class="fa fa-sign-in"></i>Small sample input</h4>-->
+<!--                        <p>Low input DNA for challenging samples types, such as formalin-fixed paraffin-embedded (FFPE) tissue, retrospective samples from fine needle aspirates, and cell-free DNA extracted from blood (cfDNA) can be difficult to sequence on competititor next-generation sequencers. However, with Ion AmpliSeq technology and the Ion S5 Sequencer, you can use as little as 10 ng input DNA or RNA.</p>-->
+<!--                    </div>-->
+<!--                    <div class="feature col-lg-3 col-md-6 col-sm-12">-->
+<!--                        <h4><i class="fa fa-tachometer"></i>Speed</h4>-->
+<!--                        <p>Some research decisions can’t wait. A few hours could make all the difference in your quest for the right answer.With other light-based sequencers you could wait almost 60 hours for results. With the Ion S5 System you get results in as little as 24 hours (with a 2.5-4 hour sequencer run time and overnight Ion Chef System run).</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+        </section>
+
+        <section id="demo">
+            <div class="container">
+                <div class="page-header">
+<!--                    <h2>Demo</h2>-->
+                </div>
+                <div data-responsive-table-toolbar="tech-companies-1"></div>
+                <div class="table-responsive" data-pattern="priority-columns">
+                    <table cellspacing="0" id="tech-companies-1" class="table table-small-font table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>customer</th>
+                                <th data-priority="1"> Location</th>
+                                <th data-priority="3">W/WO Report</th>
+                                <th data-priority="1">Price / Sample</th>
+                                <th data-priority="3">Paid or not</th>
+                                <th data-priority="3">NGS</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th><a href="/static/ColorsDB/creative/patient.html">Abd Allah Mubarak</a></th>
+                                <td>El Mokhtabar Lab</td>
+                                <td>With</td>
+                                <td>9000</td>
+                                <td>Yes</td>
+                                <td>Exome</td>
+
+                            </tr>
+                            <tr>
+                                <th>Ghada Hamada Mohamed<span class="co-name"></span></th>
+                                <td>Alex / mohamed Ghareeb</td>
+                                <td>With</td>
+                                <td>34000</td>
+                                <td>Yes</td>
+                                <td>Transcriptome</td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+
+                </div>
+                <br>
+                <br>
+
+
+
+
+            </div> <!-- end container -->
+        </section> <!-- end section -->
+
+        <section id="how-to-use">
+            <div class="container">
+                <div class="page-header">
+<!--                    <h2>How to use</h2>-->
+                </div>
+
+
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+        <!-- Latest compiled and minified Bootstrap JavaScript -->
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+        <script src="js/rwd-table.js?v=5.3.1"></script>
+
+
+
+    </body>
+</html>
